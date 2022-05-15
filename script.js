@@ -38,12 +38,35 @@ themeColor.addEventListener("click", (e) => {
   let target = e.target;
   if (target.classList.contains("active-theme")) {
     const classes = e.target.classList[1];
+    if (classes[classes.length - 1] == 2) {
+      theme2();
+    } else if (classes[classes.length - 1] == 3) {
+      theme3();
+    } else {
+      theme1();
+    }
+
     [...themes].forEach((theme) => {
       if (theme.classList.contains(classes)) theme.classList.add("active");
       else theme.classList.remove("active");
     });
   }
 });
+
+function theme1() {
+  let root = document.styleSheets[0].cssRules[2].style;
+  root.setProperty("--color-bg-main", "hsl(222, 26%, 31%)");
+  root.setProperty("--color-bg-keypad", "hsl(223, 31%, 20%)");
+  root.setProperty("--color-bg-screen", "hsl(224, 36%, 15%)");
+  root.setProperty("--color-bg1-key", "hsl(225, 21%, 49%)");
+  root.setProperty("--color-sh1-key", " hsl(224, 28%, 35%)");
+  root.setProperty("--color-bg2-key", "hsl(6, 63%, 50%)");
+  root.setProperty("--color-sh2-key", "hsl(6, 70%, 34%)");
+  root.setProperty("--color-bg3-key", " hsl(30, 25%, 89%)");
+  root.setProperty("--color-sh3-key", "hsl(28, 16%, 65%))");
+  root.setProperty("--color-text-blue", " hsl(221, 14%, 31%)");
+  root.setProperty("--color-text-white", " #fff");
+}
 
 function theme2() {
   let root = document.styleSheets[0].cssRules[2].style;
