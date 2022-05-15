@@ -27,6 +27,10 @@ html {
 body {
   font-family: "League Spartan", sans-serif;
   background-color: var(--color-bg-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -36,6 +40,8 @@ header {
   margin: 0 auto;
   align-items: end;
   margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 470px;
 }
 
 .logo h1 {
@@ -102,14 +108,13 @@ header {
 
 main {
   display: flex;
-  min-height: 100vh;
-  align-items: center;
   justify-content: center;
   width: 100%;
 }
 
 .container {
   width: 90%;
+  max-width: 470px;
 }
 
 .input-screen {
@@ -127,7 +132,7 @@ main {
 .output-screen {
   background-color: var(--color-bg-screen);
   width: 100%;
-  height: 6rem;
+  height: 5.5rem;
   margin-bottom: 2.5rem;
   text-align: right;
   font-size: 5rem;
@@ -178,4 +183,20 @@ button {
   background-color: var(--color-bg2-key);
   flex-grow: 2;
   color: var(--color-text-white);
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    gap: 2rem;
+  }
+
+  button {
+    flex-basis: 9rem;
+    padding: 0.5rem 0rem;
+    border-radius: 0.6rem;
+  }
+
+  .remove {
+    font-size: 2.5rem;
+  }
 }
