@@ -11,19 +11,20 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utills.css" />
 
     <title>Frontend Mentor | Calculator app</title>
   </head>
-  <body>
-    <header>
+  <body class="flex flex-col justify-center">
+    <header class="flex justify-between items-end">
       <div class="logo">
         <h1>calc</h1>
       </div>
 
-      <div class="theme">
+      <div class="theme items-end">
         <div class="theme-title">theme</div>
-        <div class="themes">
-          <div class="theme-number">
+        <div class="themes flex flex-col items-center">
+          <div class="theme-number flex">
             <span>1</span>
             <span>2</span>
             <span>3</span>
@@ -37,12 +38,12 @@
       </div>
     </header>
 
-    <main>
+    <main class="flex justify-center">
       <div class="container">
         <div class="input-screen"></div>
         <div class="output-screen"></div>
 
-        <div class="buttons">
+        <div class="buttons flex wrap">
           <button class="button operand">7</button>
           <button class="button operand">8</button>
           <button class="button operand">9</button>
