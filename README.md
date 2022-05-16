@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/calculator-app-using-html-css-and-js-B1SPG7Jvc](https://www.frontendmentor.io/solutions/calculator-app-using-html-css-and-js-B1SPG7Jvc
+- Live Site URL: [https://sanketcharanpahadi.github.io/calculator-app/](https://sanketcharanpahadi.github.io/calculator-app/)
 
 ## My process
 
